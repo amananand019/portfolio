@@ -1,3 +1,4 @@
+import { About } from "./About";
 import { Home } from "./Home";
 import { NavBar } from "./NavBar";
 import { SocialLinks } from "./SocialLinks";
@@ -7,6 +8,7 @@ function App() {
     <div>
       <NavBar />
       <Home />
+      <About />
       <SocialLinks />
     </div>
   );
