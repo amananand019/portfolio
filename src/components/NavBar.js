@@ -4,18 +4,18 @@ import { FaBars, FaTimes } from "react-icons/fa";
 export const NavBar = () => {
   const [nav, setNav] = useState(false);
 
-  const links = [
+  const navItems = [
     {
       id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
       link: "about",
     },
     {
-      id: 3,
+      id: 2,
       link: "experience",
+    },
+    {
+      id: 3,
+      link: "technologies",
     },
     {
       id: 4,
@@ -26,6 +26,9 @@ export const NavBar = () => {
       link: "contact",
     },
   ];
+
+  const mobileNavItems = [...navItems, { id: 6, link: "resume" }];
+
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4">
       <div>
@@ -33,7 +36,7 @@ export const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {navItems.map(({ id, link }) => (
           <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 hover:text-gray-300 duration-200">
             {link}
           </li>
@@ -49,7 +52,7 @@ export const NavBar = () => {
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-300">
-          {links.map(({ id, link }) => (
+          {mobileNavItems.map(({ id, link }) => (
             <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
               {link}
             </li>

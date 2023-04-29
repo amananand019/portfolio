@@ -12,7 +12,7 @@ export const About = () => {
             About
           </p>
         </div>
-        <p className="md:text-xl mt-10 md:mt-20">
+        <p className="md:text-xl mt-10 md:mt-14">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At corporis
           iste inventore ullam! Dignissimos distinctio molestias aliquid
           blanditiis? Maiores iure tempore, ipsam quod praesentium, optio minus
