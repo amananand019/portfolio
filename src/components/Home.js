@@ -1,6 +1,7 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import HeroImage from "../assets/heroImage.jpeg";
+import { Link } from "react-scroll";
 
 export const Home = () => {
   return (
@@ -13,19 +14,24 @@ export const Home = () => {
           <h2 className="text-4xl mt-10 md:mt-0 md:text-6xl font-bold text-white">
             I'm a Full Stack Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <p className="text-gray-500 py-4 max-w-md text-left">
             I have 1 years of experience building and designing software.
             Currently, I love to work on web application using technologies like
             React, Tailwind, SpringBoot, DynamoDB.
           </p>
 
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
-              Portfolio
+            <Link
+              to="about"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            >
+              About me
               <span className="group-hover:rotate-90 group-hover:translate-x-1 group-hover:-translate-y-1 duration-200">
                 <MdKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div>

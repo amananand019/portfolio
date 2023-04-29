@@ -12,22 +12,28 @@ export const About = () => {
             About
           </p>
         </div>
-        <p className="md:text-xl mt-10 md:mt-14">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At corporis
-          iste inventore ullam! Dignissimos distinctio molestias aliquid
-          blanditiis? Maiores iure tempore, ipsam quod praesentium, optio minus
-          porro cum, sequi nobis amet! Quidem, nostrum. Odit rem beatae maxime
-          ab vitae voluptatem quam facere. Eligendi vel labore inventore,
-          ducimus omnis magnam incidunt.
+        <p className="md:text-xl mt-10 md:mt-14 text-justify">
+          Hi, I am Aman, an Engineer by qualification and Software Developer by
+          profession.
         </p>
         <br />
-        <p className="md:text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
-          dolores consequatur delectus ipsa itaque consectetur, dolor ratione.
-          Dolores vitae asperiores eveniet tempora, error fugit perferendis
-          eaque at magni accusantium molestias ducimus porro expedita officiis,
-          assumenda, deleniti dolorem minima quod fugiat consectetur.
-          Necessitatibus eveniet ut vel non facilis et cumque quod!
+        <p className="md:text-xl text-justify">
+          I bring a year of expertise in developing and delivering top-quality
+          software products to meet the needs of clients and end-users. I have a
+          solid foundation in Java and JavaScript, and I am skilled in
+          designing, coding, testing, and maintaining software applications. My
+          ability to work effectively in a team environment, as well as my
+          strong analytical and problem-solving skills, allows me to tackle
+          complex technical challenges and find creative solutions. I am
+          constantly seeking to expand my knowledge and stay current with the
+          latest advancements in technology. My ultimate goal is to create
+          innovative software products that meet the needs of clients and users,
+          and provide an exceptional experience.
+        </p>
+        <br />
+        <p className="md:text-xl text-justify">
+          You can see the technologies that I am familiar with in the below
+          section.
         </p>
       </div>
     </div>

@@ -15,14 +15,10 @@ export const NavBar = () => {
     },
     {
       id: 3,
-      link: "technologies",
-    },
-    {
-      id: 4,
       link: "project",
     },
     {
-      id: 5,
+      id: 4,
       link: "contact",
     },
   ];

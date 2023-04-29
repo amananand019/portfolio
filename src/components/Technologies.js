@@ -69,7 +69,7 @@ export const Technologies = () => {
   return (
     <div
       name="technologies"
-      className="bg-gradient-to-b from-gray-800 via-black to-black w-full h-screen"
+      className="bg-gradient-to-b from-black via-black to-gray-800 w-full h-screen"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center h-full text-gray-200 md:ml-[20%] md:mr-[10%]">
         <div className="ml-4 sm:ml-0">
