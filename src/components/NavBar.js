@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -7,23 +8,47 @@ export const NavBar = () => {
   const navItems = [
     {
       id: 1,
-      link: "about",
+      // link: "about",
+      link: (
+        <>
+          <Link to="/">about</Link>
+        </>
+      ),
     },
     {
       id: 2,
-      link: "experience",
+      // link: "experience",
+      link: (
+        <>
+          <Link to="/experience">experience</Link>
+        </>
+      ),
     },
     {
       id: 3,
-      link: "project",
+      // link: "resume",
+      link: (
+        <>
+          <a
+            href="https://drive.google.com/file/d/1O1izojY3f9hV2jQLkfUZKaNVM_MbxsND/view?usp=share_link"
+            target="_blank"
+          >
+            resume
+          </a>
+        </>
+      ),
+      // href: "https://drive.google.com/file/d/1O1izojY3f9hV2jQLkfUZKaNVM_MbxsND/view?usp=share_link",
     },
     {
       id: 4,
-      link: "contact",
+      // link: "contact",
+      link: (
+        <>
+          <Link to="/contact">contact</Link>
+        </>
+      ),
     },
   ];
-
-  const mobileNavItems = [...navItems, { id: 6, link: "resume" }];
 
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4">
@@ -32,8 +57,11 @@ export const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {navItems.map(({ id, link }) => (
-          <li className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 hover:text-gray-300 duration-200">
+        {navItems.map(({ id, link, href }) => (
+          <li
+            key={id}
+            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 hover:text-gray-300 duration-200"
+          >
             {link}
           </li>
         ))}
@@ -48,8 +76,11 @@ export const NavBar = () => {
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-300">
-          {mobileNavItems.map(({ id, link }) => (
-            <li className="px-4 cursor-pointer capitalize py-6 text-4xl">
+          {navItems.map(({ id, link }) => (
+            <li
+              key={id}
+              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            >
               {link}
             </li>
           ))}

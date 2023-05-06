@@ -12,12 +12,12 @@ export const About = () => {
             About
           </p>
         </div>
-        <p className="md:text-xl mt-10 md:mt-14 text-justify">
+        <p className="text-sm md:text-xl mt-10 md:mt-14 text-justify">
           Hi, I am Aman, an Engineer by qualification and Software Developer by
           profession.
         </p>
         <br />
-        <p className="md:text-xl text-justify">
+        <p className="text-sm md:text-xl text-justify">
           I bring a year of expertise in developing and delivering top-quality
           software products to meet the needs of clients and end-users. I have a
           solid foundation in Java and JavaScript, and I am skilled in
@@ -31,7 +31,7 @@ export const About = () => {
           and provide an exceptional experience.
         </p>
         <br />
-        <p className="md:text-xl text-justify">
+        <p className="md:text-xl text-justify italic">
           You can see the technologies that I am familiar with in the below
           section.
         </p>

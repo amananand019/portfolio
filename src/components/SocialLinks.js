@@ -1,7 +1,8 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { HiOutlineNewspaper } from "react-icons/hi";
+import { SiLeetcode } from "react-icons/si";
+import { BiCodeAlt } from "react-icons/bi";
 
 export const SocialLinks = () => {
   const links = [
@@ -9,14 +10,23 @@ export const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/aman019anand/",
+      href: "mailto:aman019anand@gmail.com",
       style: "rounded-tr-md",
     },
     {
       id: 2,
+      child: (
+        <>
+          LinkedIn <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/aman019anand/",
+    },
+    {
+      id: 3,
       child: (
         <>
           Github <FaGithub size={30} />
@@ -25,24 +35,36 @@ export const SocialLinks = () => {
       href: "https://github.com/amananand019",
     },
     {
-      id: 3,
-      child: (
-        <>
-          Mail <HiOutlineMail size={30} />
-        </>
-      ),
-      href: "mailto:aman019anand@gmail.com",
-    },
-    {
       id: 4,
       child: (
         <>
-          Resume <HiOutlineNewspaper size={30} />
+          {" "}
+          Leetcode <SiLeetcode size={30} />
         </>
       ),
-      href: "https://drive.google.com/file/d/1O1izojY3f9hV2jQLkfUZKaNVM_MbxsND/view?usp=share_link",
+      href: "https://leetcode.com/aman019anand/",
+    },
+    {
+      id: 5,
+      child: (
+        <>
+          {" "}
+          InterviewBt <BiCodeAlt size={30} />
+        </>
+      ),
+      href: "https://www.interviewbit.com/profile/aman019anand",
       style: "rounded-br-md",
     },
+
+    // {
+    //   id: 4,
+    //   child: (
+    //     <>
+    //       Resume <HiOutlineNewspaper size={30} />
+    //     </>
+    //   ),
+    //   href: "https://drive.google.com/file/d/1O1izojY3f9hV2jQLkfUZKaNVM_MbxsND/view?usp=share_link",
+    // },
   ];
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
