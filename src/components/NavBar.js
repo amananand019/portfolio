@@ -32,12 +32,12 @@ export const NavBar = () => {
           <a
             href="https://drive.google.com/file/d/1O1izojY3f9hV2jQLkfUZKaNVM_MbxsND/view?usp=share_link"
             target="_blank"
+            rel="noreferrer"
           >
             resume
           </a>
         </>
       ),
-      // href: "https://drive.google.com/file/d/1O1izojY3f9hV2jQLkfUZKaNVM_MbxsND/view?usp=share_link",
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ export const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {navItems.map(({ id, link, href }) => (
+        {navItems.map(({ id, link }) => (
           <li
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 hover:text-gray-300 duration-200"
@@ -80,6 +80,7 @@ export const NavBar = () => {
             <li
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              onClick={() => setNav(!nav)}
             >
               {link}
             </li>
