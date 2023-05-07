@@ -30,7 +30,7 @@ export const Experience = () => {
   ];
   return (
     <div name="technologies" className="bg-black w-full h-fit md:min-h-screen">
-      <div className="max-w-screen-lg mx-auto py-20 flex flex-col justify-center h-full text-gray-200 md:ml-[20%] md:mr-[10%]">
+      <div className="max-w-screen-lg mx-auto py-20 flex flex-col justify-center md:min-h-screen text-gray-200 md:ml-[20%] md:mr-[10%]">
         <div className="ml-4 sm:ml-0">
           <p className="text-4xl font-bold border-b-4 border-gray-500 inline">
             Experience
