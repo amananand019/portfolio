@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ce4dcf87.css",
+    "main.js": "/static/js/main.05fe1eb3.js",
+    "static/media/heroImage.jpeg": "/static/media/heroImage.6b63b020c291e14ef5ba.jpeg",
+    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/springboot.png": "/static/media/springboot.5d3a34e81adb6a9148fb.png",
+    "static/media/aws.png": "/static/media/aws.4bbaf1e8c2a386dc16a4.png",
+    "static/media/java.png": "/static/media/java.2c143cff3f70e46e0dfb.png",
+    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/tailwind.png": "/static/media/tailwind.e47ac876b8d4d0bba47a.png",
+    "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
+    "static/media/mysql.png": "/static/media/mysql.15d71c36a3a91956f9de.png",
+    "index.html": "/index.html",
+    "main.ce4dcf87.css.map": "/static/css/main.ce4dcf87.css.map",
+    "main.05fe1eb3.js.map": "/static/js/main.05fe1eb3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce4dcf87.css",
+    "static/js/main.05fe1eb3.js"
+  ]
+}
