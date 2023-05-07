@@ -5,7 +5,7 @@ import { SiLeetcode, SiCodechef } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
 
 export const Contact = () => {
-  const techs = [
+  const profiles = [
     {
       id: 1,
       src: <HiOutlineMail size={50} className="h-10 sm:h-14 mx-auto " />,
@@ -79,7 +79,7 @@ export const Contact = () => {
         </div>
 
         <div className="w-full grid grid-cols-3 md:grid-cols-5 gap-4 sm:gap-8 text-center px-4 sm:px-2 md:px-0">
-          {techs.map(({ id, src, href, title, style }) => (
+          {profiles.map(({ id, src, href, title, style }) => (
             <a
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
